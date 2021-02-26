@@ -8,7 +8,7 @@ function Pagination(props){
     }
 
     return (
-        <>
+        <div style={{marginBottom:"30px",marginTop:"20px"}}>
         <div style={{display:"flex"}}>
             {pageNumbers && pageNumbers.map((item,idx)=>{
                 return (
@@ -16,7 +16,7 @@ function Pagination(props){
                 )
             })}
         </div>
-        </>
+        </div>
     )
 }
 
