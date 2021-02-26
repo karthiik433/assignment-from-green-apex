@@ -16,8 +16,17 @@ function Post(props){
         <>
        <Modal isOpen={modalIsOpen} onRequestClose={()=>{
            setData(false)
-           setModalOpen(false)}}>
-            <button onClick={()=>{
+           setModalOpen(false)}}
+           style={{
+               overlay:{
+                   backgroundColor:"brown"
+               },
+               content:{
+                   color:"orange"
+               }
+           }}
+           >
+            <button style={{color:"blue",backgroundColor:"black",width:"100px",height:"40px",borderRadius:"10px"}} onClick={()=>{
                 setData(false)
                 setModalOpen(false)}}>close</button>
            <p>{data}</p>
